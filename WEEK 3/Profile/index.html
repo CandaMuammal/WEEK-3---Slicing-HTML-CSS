@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css"/>
+    <title>Profile</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <!-- <div class="nav-wrap"> -->
+            <div class="logo-wrap">
+                <img class="blanja-logo" src="../Assets/blanja-logo.png" alt="">
+            </div>
+            <div class="searchbox-wrap">
+                <div class="search-box">
+                    <input class="input-search" type="text" placeholder="Search">
+                    <button class="search-button">
+                        <img class="search-logo" src="../Assets/search-logo.png" alt="">
+                    </button>
+                </div>
+                <div class="filter">
+                    <img src="../Assets/filter-logo.png" alt="">
+                </div>
+            </div>
+            <div class="icons-wrap">
+                <div class="nav-icons">
+                    <img src="../Assets/cart-logo.png" alt="">
+                    <img src="../Assets/notif-logo.png" alt="">
+                    <img src="../Assets/mail-logo.png" alt="">
+                    <img src="../Assets/account-logo.png" alt="">
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-container">
+            <div class="leftside">
+                <div class="profile">
+                    <div class="ava">
+                        <img src="../Assets/ava.png" alt="">
+                    </div>
+                    <div class="profilename">
+                        <h3>Johannes Mikael</h3>
+                        <div class="edit">
+                            <img src="../Assets/edit.png" alt="">
+                            <h4>Edit profile</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="myaccount">
+                    <div class="circle">
+                        <img src="../Assets/myaccount.png" alt="">
+                    </div>
+                    <h4>My Account</h4>
+                </div>
+                <div class="shipping-address">
+                    <div class="circle">
+                        <img src="../Assets/shipping-address.png" alt="">
+                    </div>
+                    <h4>Shipping Address</h4>
+                </div>
+                <div class="myorder">
+                    <div class="circle">
+                        <img src="../Assets/myorder.png" alt="">
+                    </div>
+                    <h4>My Order</h4>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="rightbox">
+                    <div class="title">
+                        <h2>My Profile</h2>
+                        <h3>Manage your profile information</h3>
+                    </div>
+                    <div class="horizontal"></div>
+                    <div class="body">
+                        <div class="leftbody">
+                            <form action="">
+                                <div class="name">
+                                    <label for="name">Name</label>
+                                    <input type="text" placeholder="Johannes Mikael" id="name">
+                                </div>
+                                <div class="email">
+                                    <label for="email">Email</label>
+                                    <input type="text" placeholder="johannes@gmail.com" id="email">
+                                </div>
+                                <div class="phone">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" placeholder="08901289012" id="phone">
+                                </div>
+                                <div class="gender">
+                                    <label for="gender">Gender</label>
+                                    <input type="radio" name="gender" value="Man">Man &emsp;&emsp;
+                                    <input type="radio" name="gender" value="Woman">Woman
+                                </div>
+                                <div class="date-birth">
+                                    <label for="birth">Date of Birth</label>
+                                    <select name="date" id="date">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <select name="month" id="month">
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                        <option value="4">April</option>
+                                        <option value="5">May</option>
+                                    </select>
+                                    <select name="year" id="year">
+                                        <option value="1">1996</option>
+                                        <option value="2">1997</option>
+                                        <option value="3">1998</option>
+                                        <option value="4">1999</option>
+                                        <option value="5">2000</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="vertical"></div>
+                        <div class="rightbody">
+                            <img src="../Assets/avabig.png" alt="">
+                            <button>Select Image</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

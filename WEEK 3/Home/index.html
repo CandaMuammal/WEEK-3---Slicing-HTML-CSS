@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script defer src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Home</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container-fluid nav-container">
+            <!-- <div class="nav-wrap"> -->
+            <div class="logo-wrap">
+                <img class="blanja-logo" src="../Assets/blanja-logo.png" alt="">
+            </div>
+            <div class="searchbox-wrap">
+                <div class="search-box">
+                    <input class="input-search" type="text" placeholder="Search">
+                    <button class="search-button">
+                        <img class="search-logo" src="../Assets/search-logo.png" alt="">
+                    </button>
+                </div>
+                <div class="filter">
+                    <button data-modal-target="#modal" class="open-button"><img src="../Assets/filter-logo.png"
+                            alt=""></button>
+                    <div class="modal active" id="modal">
+                        <div class="modal-header">
+                            <button data-close-button class="close-button">&times;</button>
+                            <h2>Filter</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="color">
+                                <h5>Colors</h5>
+                                <div class="color-button">
+                                    <button id="black"></button>
+                                    <button id="white"></button>
+                                    <button id="red"></button>
+                                    <button id="brown"></button>
+                                    <button id="darkyellow"></button>
+                                    <button id="navy"></button>
+                                </div>
+                            </div>
+                            <div class="size">
+                                <h5>Sizes</h5>
+                                <div class="size-button">
+                                    <button id="xs">XS</button>
+                                    <button id="s">S</button>
+                                    <button id="m">M</button>
+                                    <button id="l">L</button>
+                                    <button id="xl">XL</button>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <h5>Categories</h5>
+                                <div class="category-button">
+                                    <button id="all">All</button>
+                                    <button id="woman">Women</button>
+                                    <button id="man">Men</button>
+                                    <button id="boy">Boys</button>
+                                    <button id="girl">Girls</button>
+
+                                </div>
+                            </div>
+                            <div class="brand">
+                                <div class="title">
+                                    <h5>Brand</h5>
+                                    <h6>adidas original, jack and jones</h6>
+                                </div>
+                                <div class="dropdown">
+                                    <button><img src="../Assets/dropdown.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="discard">Discard</button>
+                            <button id="apply">Apply</button>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
+
+            </div>
+            <div class="icons-wrap">
+                <div class="nav-icons">
+                    <img src="../Assets/cart-logo.png" alt="">
+                    <img src="../Assets/notif-logo.png" alt="">
+                    <img src="../Assets/mail-logo.png" alt="">
+                    <img src="../Assets/account-logo.png" alt="">
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+    </nav>
+
+
+    <!-- Responsive -->
+    <div class="responsive-wrap">
+        <div class="responsive-header">
+            <div class="responsive-carousel1">
+                <div class="responsive-maincarousel">
+                    <div class="responsive-cell"><img src="../Assets/headerhome2.png" alt=""></div>
+                    <div class="responsive-cell"><img src="../Assets/headerhome3.png" alt=""></div>
+                    <div class="responsive-cell"><img src="../Assets/headerhome2.png" alt=""></div>
+                    <div class="responsive-cell"><img src="../Assets/headerhome3.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="responsive-carousel2">
+            <h2>Category</h2>
+            <h5>you're currently looking for</h5>
+            <div class="responsive-maincarousel2">
+                <div class="responsive-cell2"><img src="../Assets/carousel1.png" alt=""></div>
+                <div class="responsive-cell2"><img src="../Assets/carousel2.png" alt=""></div>
+                <div class="responsive-cell2"><img src="../Assets/carousel3.png" alt=""></div>
+                <div class="responsive-cell2"><img src="../Assets/carousel4.png" alt=""></div>
+                <div class="responsive-cell2"><img src="../Assets/carousel5.png" alt=""></div>
+                <div class="responsive-cell2"><img src="../Assets/carousel6.png" alt=""></div>
+                <div class="responsive-cell2"><img src="../Assets/carousel7.png" alt=""></div>
+                <div class="responsive-cell2"><img src="../Assets/carousel8.png" alt=""></div>
+                <div class="responsive-cell2"><img src="../Assets/carousel9.png" alt=""></div>
+                <div class="responsive-cell2"><img src="../Assets/carousel10.png" alt=""></div>
+
+            </div>
+        </div>
+
+        <div class="responsive-container4">
+            <div class="responsive-cards">
+                <h2>New</h2>
+                <h5>You've never seen it before</h5>
+                <div class="responsive-cardgroup">
+                    <div class="responsive-card">
+                        <img src="../Assets/suit.png" alt="">
+                        <div class="responsive-cardcontent">
+                            <h4>Men's formal suit - <br> Black & White</h4>
+                            <h4>$40.00</h4>
+                            <h6>Zalora's Cloth</h6>
+                            <div class="responsive-star">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <h6>&emsp13;(10)</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responsive-card">
+                        <img src="../Assets/suit.png" alt="">
+                        <div class="responsive-cardcontent">
+                            <h4>Men's formal suit - <br> Black & White</h4>
+                            <h4>$40.00</h4>
+                            <h6>Zalora's Cloth</h6>
+                            <div class="responsive-star">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <h6>&emsp13;(10)</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responsive-card">
+                        <img src="../Assets/suit.png" alt="">
+                        <div class="responsive-cardcontent">
+                            <h4>Men's formal suit - <br> Black & White</h4>
+                            <h4>$40.00</h4>
+                            <h6>Zalora's Cloth</h6>
+                            <div class="responsive-star">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <h6>&emsp13;(10)</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="responsive-container5">
+            <div class="responsive-cards">
+                <h2>Popular</h2>
+                <h5>Find clothes that are trending recently</h5>
+                <div class="responsive-cardgroup">
+                    <div class="responsive-card">
+                        <img src="../Assets/suit.png" alt="">
+                        <div class="responsive-cardcontent">
+                            <h4>Men's formal suit - <br> Black & White</h4>
+                            <h4>$40.00</h4>
+                            <h6>Zalora's Cloth</h6>
+                            <div class="responsive-star">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <h6>&emsp13;(10)</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responsive-card">
+                        <img src="../Assets/suit.png" alt="">
+                        <div class="responsive-cardcontent">
+                            <h4>Men's formal suit - <br> Black & White</h4>
+                            <h4>$40.00</h4>
+                            <h6>Zalora's Cloth</h6>
+                            <div class="responsive-star">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <h6>&emsp13;(10)</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="responsive-card">
+                        <img src="../Assets/suit.png" alt="">
+                        <div class="responsive-cardcontent">
+                            <h4>Men's formal suit - <br> Black & White</h4>
+                            <h4>$40.00</h4>
+                            <h6>Zalora's Cloth</h6>
+                            <div class="responsive-star">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <img src="../Assets/star1.png" alt="">
+                                <h6>&emsp13;(10)</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- end responsive -->
+
+
+    <header>
+        <div class="carousel1">
+            <div class="main-carousel">
+                <div class="cell"><img src="../Assets/headerhome2.png" alt=""></div>
+                <div class="cell"><img src="../Assets/headerhome3.png" alt=""></div>
+                <div class="cell"><img src="../Assets/headerhome2.png" alt=""></div>
+                <div class="cell"><img src="../Assets/headerhome3.png" alt=""></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="carousel2">
+            <h2>Category</h2>
+            <h5>you're currently looking for</h5>
+            <div class="main-carousel2">
+                <div class="cell2"><img src="../Assets/carousel1.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel2.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel3.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel4.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel5.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel6.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel7.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel8.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel9.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel10.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel11.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel12.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel13.png" alt=""></div>
+                <div class="cell2"><img src="../Assets/carousel14.png" alt=""></div>
+            </div>
+        </div>
+
+        <div class="card-new">
+            <h2>New</h2>
+            <h5>You've never seen it before</h5>
+            <div class="card-group">
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="card-popular">
+            <h2>Popular</h2>
+            <h5>Find cloth that are trending recently</h5>
+            <div class="card-group">
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/suit.png" alt="">
+                    <div class="card-content">
+                        <h4>Men's formal suit - <br> Black & White</h4>
+                        <h4>$40.00</h4>
+                        <h6>Zalora's Cloth</h6>
+                        <div class="star">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <img src="../Assets/star1.png" alt="">
+                            <h6>&emsp13;(10)</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $('.main-carousel').flickity({
+            // options
+            cellAlign: 'left',
+            wrapAround: true,
+            freeScroll: true
+        });
+    </script>
+    <script type="text/javascript">
+        $('.main-carousel2').flickity({
+            // options
+            cellAlign: 'left',
+            wrapAround: false,
+            freeScroll: true
+        });
+    </script>
+
+    <script type="text/javascript">
+        $('.responsive-maincarousel').flickity({
+            // options
+            cellAlign: 'left',
+            wrapAround: true,
+            freeScroll: true
+        });
+    </script>
+    <script type="text/javascript">
+        $('.responsive-maincarousel2').flickity({
+            // options
+            cellAlign: 'left',
+            wrapAround: true,
+            freeScroll: true
+        });
+    </script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
