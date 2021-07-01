@@ -1,0 +1,497 @@
+* {
+    font-family: MetropolisRegular;
+}
+* h3 {
+    font-size: 18px;
+}
+* h4 {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+* button {
+    cursor: pointer;
+}
+
+
+/* ========== navbar ========== */
+
+.responsive-wrap {
+    display : none;
+}
+
+nav {
+    /* border: 1px solid gray; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0.5px 30px rgba(226, 226, 226, 0.87);
+}
+ 
+.nav-container {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding: 0 10%;
+    height: 100px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin: auto; */
+    box-sizing: border-box;
+    flex-grow: initial;
+ 
+} 
+
+/* .nav-wrap {
+    height: 100px;
+    width: 100%;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} */
+
+.logo-wrap{
+    display: flex;
+    width: 20%;
+}
+
+.blanja-logo {
+    /* position: relative;
+    left: 20px; */
+    display: flex;
+    /* flex-grow: 1; */
+    margin-right: 80px;
+}
+
+.searchbox-wrap{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+
+.search-box {
+    width: 507px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    /* position: relative;
+    left: 60px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    /* flex-grow: 3; */
+}
+
+.input-search{
+    height: 25px;
+    width: 80%;
+    border: 0px;
+    border-radius: 30px;
+    display: flex;
+    position: relative;
+    right: 10%;
+}
+
+.search-button{
+    position: relative;
+    right: 15px;
+    background-color: white;
+    border: 0px;
+
+}
+
+nav .filter{
+    height: 40px;
+    width: 40px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* position: relative;
+    left: 71px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+    margin-right: 200px;
+    margin-left: 11px;
+}
+
+.icons-wrap{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: center;
+}
+
+.nav-icons{
+    width: 225px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-self: end;
+    cursor: pointer;
+    /* position: relative;
+    left: 262px; */
+    /* flex-grow: 2; */
+}
+
+
+
+/* ======= main ======= */
+main {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    height: 800px;
+    /* background-color: rgb(224, 219, 219); */
+}
+
+.main-container {
+    /* border: 1px solid gray; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container h5 {
+    margin: 50px 0;
+}
+
+h5 a {
+    text-decoration: none;
+}
+
+.container4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-group{
+    width: 100%;
+    height: 300px;
+    /* margin: 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 208px;
+    height: 285px;
+    margin: 30px 10px;
+    border: 0px solid gray;
+    display: flex;
+    flex-direction: column;
+    border-radius:10px ;
+    box-shadow: 0px 0.5px 30px rgba(226, 226, 226, 0.87);
+    
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content {
+    padding-left: 10px;
+}
+
+.card h4{
+    margin: 10px 0px 15px 0px;
+}
+
+.card h6 {
+    margin: 10px 0px 15px 0px;
+
+}
+
+.star {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-popular {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 75px;
+}
+
+.card-popular h2 {
+    margin: 0 0 10px 0;
+}
+
+.card-popular h5 {
+    margin: 0;
+    color: gray;
+}
+
+
+/* Responsive */
+
+@media (max-width: 576px)  and (min-width: 350px) {
+    nav {
+        /* border: 1px solid gray; */
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0.5px 30px rgba(226, 226, 226, 0.87);
+    }
+     
+    .nav-container {
+        position: fixed;
+        background-color: white;
+        width: 100vw;
+        padding: 0 10%;
+        height: 100px;
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* margin: auto; */
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+    } 
+    
+    /* .nav-wrap {
+        height: 100px;
+        width: 100%;   
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    } */
+    
+    .logo-wrap{
+        display: flex;
+        width: 20%;
+        margin-right: 40px;
+    }
+    
+    .blanja-logo {
+        /* position: relative;
+        left: 20px; */
+        /* display: flex; */
+        /* flex-grow: 1; */
+        /* margin-right: 80px; */
+    }
+    
+    .searchbox-wrap{
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        margin: 0px;
+        display: none;
+    }
+    
+    .search-box {
+        width: 46px;
+        height: 46px;
+        border: 0px solid gray;
+        border-radius: 30px;
+        /* position: relative;
+        left: 60px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 5px;
+        /* flex-grow: 3; */
+        display: none;
+    }
+    
+    .input-search{
+        height: 25px;
+        width: 80%;
+        border: 0px;
+        border-radius: 30px;
+        display: flex;
+        position: relative;
+        right: 10%;
+        display: none;
+    }
+    
+    .search-button{
+        position: relative;
+        width: 5px;
+        height: 46px;
+        right: 15px;
+        background-color: white;
+        border: 0px;
+        display: none;
+    
+    }
+    
+    nav .filter{
+        height: 40px;
+        width: 40px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-right: 5px;
+        /* position: relative;
+        left: 71px; */
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        /* flex-grow: 1; */
+        /* margin-right: 200px;
+        margin-left: 11px; */
+    }
+    
+    .icons-wrap{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        justify-content: center; 
+        margin-left: 50px;
+        padding: 0 5px;
+    }
+    
+    .nav-icons{
+        width: 225px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-self: end;
+        /* position: relative;
+        left: 262px; */
+        /* flex-grow: 2; */
+    }
+
+    .nav-icons img {
+        margin: 0 5px;
+    } 
+    
+    .main-wrap {
+        display: none;
+    }
+
+    .responsive-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .responsive-container1 {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .responsive-container1 h5 {
+        margin: 20px 0;
+    }
+ 
+    .responsive-container4 {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 75px
+    }
+
+    .responsive-cardgroup{
+    width: 100%;
+    height: 300px;
+    /* margin: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 75px; */
+
+}
+
+.responsive-card {
+    width: 208px;
+    height: 285px;
+    margin: 30px 10px;
+    border: 0px solid gray;
+    display: flex;
+    flex-direction: column;
+    border-radius:10px ;
+    box-shadow: 0px 0.5px 30px rgba(226, 226, 226, 0.87);
+    
+}
+
+.responsive-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.responsive-cardcontent {
+    padding-left: 10px;
+}
+
+.responsive-card h4{
+    margin: 10px 0px 15px 0px;
+}
+
+.responsive-card h6 {
+    margin: 10px 0px 15px 0px;
+
+}
+
+.responsive-star {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.responsive-star h6 {
+    margin: 0;
+}
+
+.responsive-cards {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.responsive-cards h2 {
+    margin: 0 0 10px 0;
+}
+
+.responsive-cards h5 {
+    margin: 0;
+    color: gray;
+}
+}
+
+
+
+
