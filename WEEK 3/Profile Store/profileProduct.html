@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profileProduct.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css" />
+    <title>Profile</title>
+</head>
+ 
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <div class="logo">
+                <img src="./Assets/blanja-logo.png" alt="">
+            </div>
+            <div class="menu-wrap">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                    <img src="./Assets/search-logo.png" alt="">
+                </div>
+                <div class="filter">
+                    <button><a href=""><img src="./Assets/filter-logo.png" alt=""></a></button>
+                </div>
+                <div class="icons">
+                    <a href=""><img src="./Assets/cart-logo.png" alt=""></a>
+                    <a href=""><img src="./Assets/notif-logo.png" alt=""></a>
+                    <a href=""><img src="./Assets/mail-logo.png" alt=""></a>
+                    <a href=""><img src="./Assets/ava.png" alt=""></a>
+                </div>
+
+            </div>
+            <div class="hamburger-menu">
+                <input type="checkbox" name="" class="toggle-menu" id="toggle-menu">
+                <div class="hamburger">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ===== responsive ======= -->
+        <div class="responsive-maincontainer">
+            <div class="responsive-leftside">
+                <div class="responsive-profile">
+                    <div class="responsive-ava">
+                        <img src="./Assets/ava.png" alt="">
+                    </div>
+                    <div class="responsive-profilename">
+                        <!-- <h3>Johannes Mikael</h3> -->
+                        <!-- <div class="edit">
+                            <img src="./Assets/edit.png" alt="">
+                            <h4><a href="">Edit profile</a></h4>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="responsive-myaccount">
+                    <div class="responsive-circle">
+                        <img src="./Assets/store.png" alt="">
+                    </div>
+                    <!-- <h4><a href="">My Account</a></h4> -->
+                </div>
+                <div class="responsive-shippingaddress">
+                    <div class="responsive-circle">
+                        <img src="./Assets/product.png" alt="">
+                    </div>
+                    <!-- <h4><a href="">Shipping Address</a></h4> -->
+                </div>
+                <div class="responsive-myorder">
+                    <div class="responsive-circle">
+                        <img src="./Assets/order.png" alt="">
+                    </div>
+                    <!-- <h4><a href="">My Order</a></h4> -->
+                </div>
+            </div>
+            <div class="responsive-rightside">
+                <div class="responsive-rightbox">
+                    <div class="responsive-tabwrap">
+                        <div class="responsive-header">
+                            My Products
+                        </div>
+                        <input type="radio" name="slider" class="responsive-radio" id="responsive-all" checked>
+                        <input type="radio" name="slider" class="responsive-radio" id="responsive-sold">
+                        <input type="radio" name="slider" class="responsive-radio" id="responsive-archieved">
+                        
+
+                        <div class="responsive-tabtitle">
+                            <label for="all" class="responsive-all">All</label>
+                            <label for="sold" class="responsive-sold">Sold</label>
+                            <label for="archieved" class="responsive-archieved">Archieved</label>
+                   
+                            <div class="responsive-slider"></div>
+                        </div>
+                        <div class="responsive-horizontal"></div>
+
+                    </div>
+                    <div class="responsive-searchitem">
+                        <input type="text" placeholder="Search">
+                        <img src="./Assets/search-logo.png" alt="">
+                    </div>
+                    <div class="responsive-body">
+                        <div class="responsive-bodyhead">
+                            <div class="responsive-name">Product name</div>
+                            <div class="responsive-price">Price</div>
+                            <div class="responsive-stock">Stock</div>
+                        </div>
+                        <div class="responsive-bodycontent">
+                            <img src="./Assets/nothing2.png" alt="">
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ===== end responsive ======= -->
+        <div class="main-container">
+            <div class="leftside">
+                <div class="profile">
+                    <div class="ava">
+                        <img src="./Assets/ava.png" alt="">
+                    </div>
+                    <div class="profilename">
+                        <h3>Johannes Mikael</h3>
+                        <div class="edit">
+                            <img src="./Assets/edit.png" alt="">
+                            <h4><a href="">Edit profile</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="store">
+                    <div class="circle">
+                        <img src="./Assets/store.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h4><a href="">Store</a></h4>
+                        <ul>
+                            <li>
+                                <h4><a href="">Store Profile</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="circle">
+                        <img src="./Assets/product.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h4><a href="">Product</a></h4>
+                        <ul>
+                            <li>
+                                <h4><a href="">My Products</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="">Selling Products</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="circle">
+                        <img src="./Assets/order.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h4><a href="">Order</a></h4>
+                        <ul>
+                            <li>
+                                <h4><a href="">My Orders</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="">Orders Cancel</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="rightbox">
+                    <div class="tab-wrap">
+                        <div class="header">
+                            My Products
+                        </div>
+                        <input type="radio" name="slider" class="radio" id="all" checked>
+                        <input type="radio" name="slider" class="radio" id="sold">
+                        <input type="radio" name="slider" class="radio" id="archieved">
+                        
+
+                        <div class="tab-title">
+                            <label for="all" class="all">All items</label>
+                            <label for="sold" class="sold">Sold</label>
+                            <label for="archieved" class="archieved">Archieved</label>
+                   
+                            <div class="slider"></div>
+                        </div>
+                        <div class="horizontal"></div>
+
+                    </div>
+                    <div class="searchitem">
+                        <input type="text" placeholder="Search">
+                        <img src="./Assets/search-logo.png" alt="">
+                    </div>
+                    <div class="body">
+                        <div class="bodyhead">
+                            <div class="name">Product name</div>
+                            <div class="price">Price</div>
+                            <div class="stock">Stock</div>
+                        </div>
+                        <div class="body-content">
+                            <img src="./Assets/nothing2.png" alt="">
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../script.js"></script>
+</body>
+
+</html>

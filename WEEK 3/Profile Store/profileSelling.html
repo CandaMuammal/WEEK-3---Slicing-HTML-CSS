@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profileSelling.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css" />
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <div class="logo">
+                <img src="./Assets/blanja-logo.png" alt="">
+            </div>
+            <div class="menu-wrap">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                    <img src="./Assets/search-logo.png" alt="">
+                </div>
+                <div class="filter">
+                    <button><a href=""><img src="./Assets/filter-logo.png" alt=""></a></button>
+                </div>
+                <div class="icons">
+                    <a href=""><img src="./Assets/cart-logo.png" alt=""></a>
+                    <a href=""><img src="./Assets/notif-logo.png" alt=""></a>
+                    <a href=""><img src="./Assets/mail-logo.png" alt=""></a>
+                    <a href=""><img src="./Assets/ava.png" alt=""></a>
+                </div>
+
+            </div>
+            <div class="hamburger-menu">
+                <input type="checkbox" name="" class="toggle-menu" id="toggle-menu">
+                <div class="hamburger">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+
+        <!-- ==== responsive ===== -->
+        <div class="responsive-maincontainer">
+            <div class="responsive-leftside">
+                <div class="responsive-profile">
+                    <div class="responsive-ava">
+                        <img src="./Assets/ava.png" alt="">
+                    </div>
+                    <div class="responsive-profilename">
+                        <!-- <h3>Johannes Mikael</h3> -->
+                        <!-- <div class="edit">
+                            <img src="./Assets/edit.png" alt="">
+                            <h4><a href="">Edit profile</a></h4>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="responsive-myaccount">
+                    <div class="responsive-circle">
+                        <img src="./Assets/store.png" alt="">
+                    </div>
+                    <!-- <h4><a href="">My Account</a></h4> -->
+                </div>
+                <div class="responsive-shippingaddress">
+                    <div class="responsive-circle">
+                        <img src="./Assets/product.png" alt="">
+                    </div>
+                    <!-- <h4><a href="">Shipping Address</a></h4> -->
+                </div>
+                <div class="responsive-myorder">
+                    <div class="responsive-circle">
+                        <img src="./Assets/order.png" alt="">
+                    </div>
+                    <!-- <h4><a href="">My Order</a></h4> -->
+                </div>
+            </div>
+            <div class="responsive-rightside">
+                <div class="responsive-box1">
+                    <div class="responsive-inventory">
+                        <h2>Inventory</h2>
+                    </div>
+                    <form action="">
+                        <label for="name">Name of goods</label>
+                        <input type="text">
+                    </form>
+                </div>
+                <div class="responsive-box2">
+                    <div class="responsive-itemdetail">
+                        <h2>Item Details</h2>
+                    </div>
+                    <form action="">
+                        <label for="price">Unit price</label>
+                        <input type="text">
+                        <label for="stock">Stock</label>
+                        <input type="text">
+                        <label for="condition">Stock</label>
+                        <div class="responsive-radio">
+                            <input type="radio" name="condition" id="">Baru
+                            <input type="radio" name="condition" id="">Bekas
+                        </div>
+
+                    </form>
+                </div>
+                <div class="responsive-box3">
+                    <div class="responsive-photogoods">
+                        <h2>Photo of Goods</h2>
+                    </div>
+                    <div class="responsive-body">
+                        <div class="responsive-pict">
+                            <div class="responsive-pict1"><img src="./Assets/bigbox.png" alt=""></div>
+                            <div class="responsive-pict2"><img src="./Assets/smallbox.png" alt=""></div>
+                            <div class="responsive-pict2"><img src="./Assets/smallbox.png" alt=""></div>
+                        </div>
+                        <div class="responsive-pictbutton">
+                            <button class="responsive-upload">Upload</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="responsive-box4">
+                    <div class="responsive-descript">
+                        <h2>Description</h2>
+                    </div>
+                    <div class="responsive-body">
+                        <div class="responsive-writing"><img src="./Assets/writing.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- ===== end responsive ======= -->
+
+
+        <div class="main-container">
+            <div class="leftside">
+                <div class="profile">
+                    <div class="ava">
+                        <img src="./Assets/ava.png" alt="">
+                    </div>
+                    <div class="profilename">
+                        <h3>Johannes Mikael</h3>
+                        <div class="edit">
+                            <img src="./Assets/edit.png" alt="">
+                            <h4><a href="">Edit profile</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="store">
+                    <div class="circle">
+                        <img src="./Assets/store.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h4><a href="">Store</a></h4>
+                        <ul>
+                            <li>
+                                <h4><a href="">Store Profile</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="circle">
+                        <img src="./Assets/product.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h4><a href="">Product</a></h4>
+                        <ul>
+                            <li>
+                                <h4><a href="">My Products</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="">Selling Products</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="circle">
+                        <img src="./Assets/order.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h4><a href="">Order</a></h4>
+                        <ul>
+                            <li>
+                                <h4><a href="">My Orders</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="">Orders Cancel</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="box1">
+                    <div class="inventory">
+                        <h2>Inventory</h2>
+                    </div>
+                    <form action="">
+                        <label for="name">Name of goods</label>
+                        <input type="text">
+                    </form>
+                </div>
+                <div class="box2">
+                    <div class="item-detail">
+                        <h2>Item Details</h2>
+                    </div>
+                    <form action="">
+                        <label for="price">Unit price</label>
+                        <input type="text">
+                        <label for="stock">Stock</label>
+                        <input type="text">
+                        <label for="condition">Stock</label>
+                        <div class="radio">
+                            <input type="radio" name="condition" id="">Baru
+                            <input type="radio" name="condition" id="">Bekas
+                        </div>
+
+                    </form>
+                </div>
+                <div class="box3">
+                    <div class="photogoods">
+                        <h2>Photo of Goods</h2>
+                    </div>
+                    <div class="body">
+                        <div class="pict">
+                            <div class="pict1"><img src="./Assets/bigbox.png" alt=""></div>
+                            <div class="pict2"><img src="./Assets/smallbox.png" alt=""></div>
+                            <div class="pict2"><img src="./Assets/smallbox.png" alt=""></div>
+                            <div class="pict2"><img src="./Assets/smallbox.png" alt=""></div>
+                            <div class="pict2"><img src="./Assets/smallbox.png" alt=""></div>
+                        </div>
+                        <div class="pict-button">
+                            <button class="upload">Upload</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="box4">
+                    <div class="descript">
+                        <h2>Description</h2>
+                    </div>
+                    <div class="body">
+                        <div class="writing"><img src="./Assets/writing.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="../script.js"></script>
+</body>
+
+</html>

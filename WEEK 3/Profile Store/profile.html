@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css" />
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrap">
+            <div class="logo">
+                <img src="./Assets/blanja-logo.png" alt="">
+            </div>
+            <div class="menu-wrap">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                    <img src="./Assets/search-logo.png" alt="">
+                </div>
+                <div class="filter">
+                    <button><a href=""><img src="./Assets/filter-logo.png" alt=""></a></button>
+                </div>
+                <div class="icons">
+                    <a href=""><img src="./Assets/cart-logo.png" alt=""></a>
+                    <a href=""><img src="./Assets/notif-logo.png" alt=""></a>
+                    <a href=""><img src="./Assets/mail-logo.png" alt=""></a>
+                    <a href=""><img src="./Assets/ava.png" alt=""></a>
+                </div>
+
+            </div>
+            <div class="hamburger-menu">
+                <input type="checkbox" name="" class="toggle-menu" id="toggle-menu">
+                <div class="hamburger">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ===== responsive ===== -->
+        <div class="responsive-maincontainer">
+            <div class="responsive-leftside">
+                <div class="responsive-profile">
+                    <div class="responsive-ava">
+                        <img src="./Assets/ava.png" alt="">
+                    </div>
+                    <div class="responsive-profilename">
+                        <!-- <h3>Johannes Mikael</h3> -->
+                        <!-- <div class="edit">
+                            <img src="./Assets/edit.png" alt="">
+                            <h4><a href="">Edit profile</a></h4>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="responsive-myaccount">
+                    <div class="responsive-circle">
+                        <img src="./Assets/store.png" alt="">
+                    </div>
+                    <!-- <h4><a href="">My Account</a></h4> -->
+                </div>
+                <div class="responsive-shippingaddress">
+                    <div class="responsive-circle">
+                        <img src="./Assets/product.png" alt="">
+                    </div>
+                    <!-- <h4><a href="">Shipping Address</a></h4> -->
+                </div>
+                <div class="responsive-myorder">
+                    <div class="responsive-circle">
+                        <img src="./Assets/order.png" alt="">
+                    </div>
+                    <!-- <h4><a href="">My Order</a></h4> -->
+                </div>
+            </div>
+            <div class="responsive-rightside">
+                <div class="responsive-rightbox">
+                    <div class="responsive-title">
+                        <h2>My Profile</h2>
+                        <!-- <h3>Manage your profile information</h3> -->
+                    </div>
+                    <div class="responsive-horizontal"></div>
+                    <div class="responsive-body">
+                        <div class="responsive-rightbody">
+                            <img src="./Assets/avabig.png" alt="">
+                            <button>Select Image</button>
+                        </div>
+                        <div class="responsive-leftbody">
+                            <form action="">
+                                <div class="responsive-name">
+                                    <label for="name">Name</label>
+                                    <input type="text" placeholder="Johannes Mikael" id="name">
+                                </div>
+                                <div class="responsive-email">
+                                    <label for="email">Email</label>
+                                    <input type="text" placeholder="johannes@gmail.com" id="email">
+                                </div>
+                                <div class="responsive-phone">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" placeholder="08901289012" id="phone">
+                                </div>
+                                <div class="responsive-store">
+                                    <label for="responsive-store">Store Descript</label>
+                                    <input type="email" placeholder="" id="description">
+                                </div>
+
+
+                            </form>
+                            <button class="responsive-save">Save</button>
+                        </div>
+                        <div class="responsive-vertical"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== end responsive ====== -->
+
+        <div class="main-container">
+            <div class="leftside">
+                <div class="profile">
+                    <div class="ava">
+                        <img src="./Assets/ava.png" alt="">
+                    </div>
+                    <div class="profilename">
+                        <h3>Johannes Mikael</h3>
+                        <div class="edit">
+                            <img src="./Assets/edit.png" alt="">
+                            <h4><a href="">Edit profile</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="store">
+                    <div class="circle">
+                        <img src="./Assets/store.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h4><a href="">Store</a></h4>
+                        <ul>
+                            <li>
+                                <h4><a href="">Store Profile</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="circle">
+                        <img src="./Assets/product.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h4><a href="">Product</a></h4>
+                        <ul>
+                            <li>
+                                <h4><a href="./profileProduct.html">My Products</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="./profileSelling.html">Selling Products</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="circle">
+                        <img src="./Assets/order.png" alt="">
+                    </div>
+                    <div class="title">
+                        <h4><a href="">Order</a></h4>
+                        <ul>
+                            <li>
+                                <h4><a href="./profileOrder.html">My Orders</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="./profileOrder.html">Orders Cancel</a></h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="rightbox">
+                    <div class="title">
+                        <h2>My Profile</h2>
+                        <h3>Manage your profile information</h3>
+                    </div>
+                    <div class="horizontal"></div>
+                    <div class="body">
+                        <div class="leftbody">
+                            <form action="">
+                                <div class="name">
+                                    <label for="name">Name</label>
+                                    <input type="text" placeholder="Johannes Mikael" id="name">
+                                </div>
+                                <div class="email">
+                                    <label for="email">Email</label>
+                                    <input type="text" placeholder="johannes@gmail.com" id="email">
+                                </div>
+                                <div class="phone">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" placeholder="08901289012" id="phone">
+                                </div>
+                                <div class="phone">
+                                    <label for="phone">Store Description</label>
+                                    <input type="email" placeholder="" id="description">
+                                </div>
+
+
+                            </form>
+                            <button class="save">Save</button>
+                        </div>
+                        <div class="vertical"></div>
+                        <div class="rightbody">
+                            <img src="./Assets/avabig.png" alt="">
+                            <button>Select Image</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../script.js"></script>
+</body>
+
+</html>
